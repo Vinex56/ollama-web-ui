@@ -61,12 +61,6 @@ with st.sidebar:
                 st.rerun()
 
     st.divider()
-    if st.button('Новая сессия', type='primary'):
-        if st.session_state.current_chat_id:
-            st.session_state.messages = []
-            st.session_state.current_chat_id = None
-            st.rerun()
-
     if st.button('🔥 Очистить ВСЁ', type='primary'):
         clear_all_chats()
         st.session_state.messages = []
