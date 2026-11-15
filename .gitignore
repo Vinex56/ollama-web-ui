@@ -21,3 +21,6 @@ wheels/
 # Logs
 *.log
 
+# History (ignore content, keep directory)
+history/*
+
